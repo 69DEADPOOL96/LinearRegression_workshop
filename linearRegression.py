@@ -5,7 +5,7 @@ import numpy as np
 app = Flask(__name__)
 
 # Load trained model
-with open("C:\\Users\\HP\\Desktop\\Career\\ADANI\\Workshop\\Machine Learning\\ML-in-One-Month\\LinearReggression\\linear_regression.pkl", "rb") as file:
+with open("./linear_regression.pkl", "rb") as file:
     model = pickle.load(file)
 
 @app.route('/')
